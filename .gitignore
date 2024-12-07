@@ -134,3 +134,4 @@ yarn.lock
 package-lock.json
 .angular/
 dist/
+.vs
