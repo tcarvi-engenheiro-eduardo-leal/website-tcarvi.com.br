@@ -5,40 +5,34 @@
     </div>
     <div class="divider" role="separator" aria-label="Divider"></div>
     <div>
-      <div class="pill-group">
-        @for (item of [
-          { title: 'Projeto Arquitetônico', link: 'https://engenharia-estrutural.web.app' },
-          { title: 'Projeto de Acústica', link: 'https://engenharia-acustica.web.app' },
-          { title: 'Projeto de Iluminação', link: 'https://projeto-de-iluminacao.web.app' },
-          { title: 'Projeto de Engenharia Estrutural', link: 'https://engenharia-estrutural.web.app' },
-          { title: 'Projeto de Engenharia Geotécnica de Fundação', link: 'https://engenharia-de-fundacao.web.app' },
-          { title: 'Projeto de Topografia', link: 'https://engenharia-de-fundacao.web.app' },
-          { title: 'Projeto de Materiais Compósitos', link: 'https://engenharia-estrutural.web.app' },
-          { title: 'Projeto de Desenvolvimento Web', link: 'https://blender-artes-visuais.web.app' },
-          { title: 'Projeto de Artes Visuais', link: 'https://blender-artes-visuais.web.app' },
-          { title: 'Projeto de Análise de Dados e Inteligência Artificial', link: 'https://python-coding-53377.web.app' },
-        ]; track item.title) {
-          <a
-            class="pill"
-            [href]="item.link"
-            target="_blank"
-            rel="noopener"
-          >
-            <span>{{ item.title }}</span>
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              height="14"
-              viewBox="0 -960 960 960"
-              width="14"
-              fill="currentColor"
-            >
-              <path
-                d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z"
-              />
-            </svg>
-          </a>
-        }
-      </div>
+        <div class="pill-group">
+            @for (item of [
+            { title: 'Projeto de Desenvolvimento Web', link: 'https://blender-artes-visuais.web.app' },
+            { title: 'Projeto de Artes Visuais', link: 'https://blender-artes-visuais.web.app' },
+            { title: 'Projeto de Análise de Dados e Inteligência Artificial', link: 'https://python-coding-53377.web.app' },
+            { title: 'Projeto de Topografia', link: 'https://engenharia-de-fundacao.web.app' },
+            { title: 'Projeto Arquitetônico', link: 'https://engenharia-estrutural.web.app' },
+            { title: 'Projeto de Acústica', link: 'https://engenharia-acustica.web.app' },
+            { title: 'Projeto de Iluminação', link: 'https://projeto-de-iluminacao.web.app' },
+            { title: 'Projeto de Materiais Compósitos', link: 'https://engenharia-estrutural.web.app' },
+            { title: 'Projeto de Engenharia Estrutural', link: 'https://engenharia-estrutural.web.app' },
+            { title: 'Projeto de Engenharia Geotécnica de Fundação', link: 'https://engenharia-de-fundacao.web.app' }
+            ]; track item.title) {
+            <a class="pill"
+               [href]="item.link"
+               target="_blank"
+               rel="noopener">
+                <span>{{ item.title }}</span>
+                <svg xmlns="http://www.w3.org/2000/svg"
+                     height="14"
+                     viewBox="0 -960 960 960"
+                     width="14"
+                     fill="currentColor">
+                    <path d="M200-120q-33 0-56.5-23.5T120-200v-560q0-33 23.5-56.5T200-840h280v80H200v560h560v-280h80v280q0 33-23.5 56.5T760-120H200Zm188-212-56-56 372-372H560v-80h280v280h-80v-144L388-332Z" />
+                </svg>
+            </a>
+            }
+        </div>
       <div class="social-links">
         <a
           href="https://github.com/tcarvi-engenheiro-eduardo-leal/"
