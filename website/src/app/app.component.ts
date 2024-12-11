@@ -7,5 +7,5 @@ import { RouterOutlet } from '@angular/router';
   templateUrl: './app.component.html'
 })
 export class AppComponent {
-  title = 'tcarvi.com.br';
+  title = 'TCARVI';
 }
