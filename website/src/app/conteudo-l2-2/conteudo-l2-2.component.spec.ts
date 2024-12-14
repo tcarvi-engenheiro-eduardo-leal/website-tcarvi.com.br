@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { Conteudo1Component } from './conteudo-1.component';
+import { ConteudoL22Component } from './conteudo-l2-2.component';
 
-describe('Conteudo1Component', () => {
-  let component: Conteudo1Component;
-  let fixture: ComponentFixture<Conteudo1Component>;
+describe('ConteudoL22Component', () => {
+  let component: ConteudoL22Component;
+  let fixture: ComponentFixture<ConteudoL22Component>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [Conteudo1Component]
+      imports: [ConteudoL22Component]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(Conteudo1Component);
+    fixture = TestBed.createComponent(ConteudoL22Component);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });
