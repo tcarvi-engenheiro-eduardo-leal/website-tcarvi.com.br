@@ -1,11 +1,13 @@
 <mat-nav-list>
   @for (projeto of projetos; track projeto) {
-    <a mat-list-item href="projeto.link">{{ projeto.title }}</a>
+    <a mat-list-item href='{{ projeto.link }}'>{{ projeto.title }}</a>
   }
+  <mat-divider></mat-divider>
   @for (pesquisa of pesquisas; track pesquisa) {
-    <a mat-list-item href="pesquisa.link">{{ pesquisa.title }}</a>
+    <a mat-list-item href='{{ pesquisa.link }}'>{{ pesquisa.title }}</a>
   }
+  <mat-divider></mat-divider>
   @for (produtoMidiatico of produtosMidiaticos; track produtoMidiatico) {
-    <a mat-list-item href="produtoMidiatico.link">{{ produtoMidiatico.title }}</a>
+    <a mat-list-item href='{{ produtoMidiatico.link }}'>{{ produtoMidiatico.title }}</a>
   }
 </mat-nav-list>

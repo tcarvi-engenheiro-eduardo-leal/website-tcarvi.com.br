@@ -19,8 +19,6 @@ export class C2L1Component {
   produtosMidiaticos: Array<Site>;
   constructor() {
     this.projetos = [
-      { title: 'Projeto de Artes Visuais', link: 'https://projeto-de-artes-visuais.web.app' },
-      { title: 'Tutoriais de Análise de Dados e Inteligência Artificial', link: 'https://tcarvi-inteligencia-artificial.web.app' },
       { title: 'Projeto de Topografia', link: 'https://engenharia-de-fundacao.web.app' },
       { title: 'Projeto Arquitetônico', link: 'https://engenharia-estrutural.web.app' },
       { title: 'Projeto de Acústica', link: 'https://engenharia-acustica.web.app' },
@@ -30,10 +28,10 @@ export class C2L1Component {
       { title: 'Projeto de Engenharia Geotécnica de Fundação', link: 'https://engenharia-de-fundacao.web.app' }
     ];
     this.pesquisas = [
-      { title: 'Pesquisas', link: 'https://tcarvi-inteligencia-artificial.web.app' }
+      { title: 'Análise de Dados e Inteligência Artificial', link: 'https://tcarvi-inteligencia-artificial.web.app' },
     ];
     this.produtosMidiaticos = [
-      { title: 'Produtos Midiáticos', link: 'https://engenharia-de-fundacao.web.app' }
+      { title: 'Artes Visuais', link: 'https://projeto-de-artes-visuais.web.app' },
     ];
   }
 }
