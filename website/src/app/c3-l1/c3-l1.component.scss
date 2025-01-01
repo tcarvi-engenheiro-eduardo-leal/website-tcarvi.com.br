@@ -1,0 +1,97 @@
+/* Parte 3 - Sidebar */
+:host {
+  grid-area: asideArea;
+  background: gray;
+}
+
+:host .encapsulado {
+  // overflow-wrap: break-word; /* Força quebra de palavras */
+  // word-wrap: break-word; /* Compatibilidade com navegadores antigos */
+  // word-break: break-word; /* Opcional, força quebra entre palavras longas */
+  max-width: 100%; /* Limita a largura ao tamanho do contêiner pai */
+  display: inline-block; /* Necessário para aplicar max-width */
+}
+
+.footer-card {
+  background-color: #333;
+  color: white;
+  padding: 20px;
+  margin-top: 30px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-column {
+  flex: 1;
+  margin: 10px;
+  min-width: 250px;
+}
+
+.footer h3 {
+  margin-bottom: 10px;
+}
+
+.footer a {
+  color: #4caf50;
+  text-decoration: none;
+}
+
+.footer a:hover {
+  text-decoration: underline;
+}
+
+/* Responsividade */
+
+/*
+ * Extra Small (XSmall)
+ * Breakpoints.XSmall
+ * Menor que 600px
+ */
+@media (max-width: 599px) {
+  :host{
+  }
+}
+
+/*
+ * Small
+ * Breakpoints.Small
+ * De 600px até 959px
+ */
+@media (min-width: 600px) and (max-width: 959px) {
+  :host{
+  }
+}
+
+/*
+ * Medium
+ * Breakpoints.Medium
+ * De 960px até 1279px
+ */
+@media (min-width: 960px) and (max-width: 1279px) {
+  :host{
+  }
+}
+
+/*
+ * Large
+ * Breakpoints.Large
+ * De 1280px até 1919px
+ */
+@media (min-width: 1280px) and (max-width: 1919px) {
+  :host{
+  }
+}
+
+/*
+ * Extra Large (XLarge)
+ * Breakpoints.XLarge
+ * A partir de 1920px
+ */
+@media (min-width: 1920px) {
+  :host{
+  }
+}

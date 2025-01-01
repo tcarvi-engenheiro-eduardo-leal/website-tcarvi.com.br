@@ -1,0 +1,11 @@
+<mat-nav-list>
+  @for (projeto of projetos; track projeto) {
+    <a mat-list-item href="projeto.link">{{ projeto.title }}</a>
+  }
+  @for (pesquisa of pesquisas; track pesquisa) {
+    <a mat-list-item href="pesquisa.link">{{ pesquisa.title }}</a>
+  }
+  @for (produtoMidiatico of produtosMidiaticos; track produtoMidiatico) {
+    <a mat-list-item href="produtoMidiatico.link">{{ produtoMidiatico.title }}</a>
+  }
+</mat-nav-list>

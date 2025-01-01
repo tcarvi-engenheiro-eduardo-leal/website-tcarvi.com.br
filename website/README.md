@@ -1,59 +1,102 @@
-# 
+# Design Responsivo
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 19.0.4.
+## Use uma estrutura padrão para o arquivo scss:
+```scss
+:host {
+  grid-area: headerArea;
+  background: gray;
+}
 
-## Development server
+:host .encapsulado {
+  overflow-wrap: break-word; /* Força quebra de palavras */
+  word-wrap: break-word; /* Compatibilidade com navegadores antigos */
+  word-break: break-word; /* Opcional, força quebra entre palavras longas */
+  max-width: 100%; /* Limita a largura ao tamanho do contêiner pai */
+  display: inline-block; /* Necessário para aplicar max-width */
+}
 
-To start a local development server, run:
+/* Responsividade */
 
-```bash
-ng serve
+/*
+ * Extra Small (XSmall)
+ * Breakpoints.XSmall
+ * Menor que 600px
+ */
+@media (max-width: 599px) {
+  :host {
+  }
+}
+
+/*
+ * Small
+ * Breakpoints.Small
+ * De 600px até 959px
+ */
+@media (min-width: 600px) and (max-width: 959px) {
+  :host {
+  }
+}
+
+/*
+ * Medium
+ * Breakpoints.Medium
+ * De 960px até 1279px
+ */
+@media (min-width: 960px) and (max-width: 1279px) {
+  :host {
+  }
+}
+
+/*
+ * Large
+ * Breakpoints.Large
+ * De 1280px até 1919px
+ */
+@media (min-width: 1280px) and (max-width: 1919px) {
+  :host {
+  }
+}
+
+/*
+ * Extra Large (XLarge)
+ * Breakpoints.XLarge
+ * A partir de 1920px
+ */
+@media (min-width: 1920px) {
+  :host {
+  }
+}
 ```
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
+## Use grid para a responsividade
+- Cada componente, deve ter grid-area definido como :host
+```scss
+:host {
+    grid-area: nomeDaArea;
+}
 ```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
+- Defina também design para classe que não permite que textos quebrem a responsividade dos componentes pai:
+```scss
+:host .encapsulado {
+  overflow-wrap: break-word; /* Força quebra de palavras */
+  word-wrap: break-word; /* Compatibilidade com navegadores antigos */
+  word-break: break-word; /* Opcional, força quebra entre palavras longas */
+  max-width: 100%; /* Limita a largura ao tamanho do contêiner pai */
+  display: inline-block; /* Necessário para aplicar max-width */
+}
 ```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
+- Para o layout, que é pai dos conteúdos:
+```scss
+:host {
+  // Padrão para a responsividade
+  display: grid;
+  // 100vh garante que o contêiner ocupe 100% da altura da janela, independentemente do tamanho da tela.
+  height: 100vh;
+}
 ```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Karma](https://karma-runner.github.io) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+- Agora o layout deve usar o grid para a responsividade, indicando as propriedades, para cada valor de media querie:
+  - grid-template-areas: "nomeArea1" "nomeArea2 nomeArea3";
+  - grid-template-columns: 1fr 2 fr;
+  - grid-template-rows: auto 1fr auto; /* Linhas ajustáveis */
+  - gap: 5px;
+  

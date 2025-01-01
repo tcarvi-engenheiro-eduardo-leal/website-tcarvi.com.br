@@ -32,7 +32,6 @@
               }
             ],
             "styles": [
-              "node_modules/normalize.css/normalize.css",
               "@angular/material/prebuilt-themes/azure-blue.css",
               "src/styles.scss"
             ],
@@ -97,6 +96,18 @@
               "src/styles.scss"
             ],
             "scripts": []
+          }
+        },
+        "e2e": {
+          "builder": "@puppeteer/ng-schematics:puppeteer",
+          "options": {
+            "devServerTarget": "app1:serve",
+            "testRunner": "jasmine"
+          },
+          "configurations": {
+            "production": {
+              "devServerTarget": "app1:serve:production"
+            }
           }
         }
       }

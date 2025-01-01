@@ -1,0 +1,65 @@
+/* Parte 2 - Conteúdo */
+:host {
+  grid-area: mainArea;
+  background: gray;
+}
+
+:host .encapsulado {
+  // overflow-wrap: break-word; /* Força quebra de palavras */
+  // word-wrap: break-word; /* Compatibilidade com navegadores antigos */
+  // word-break: break-word; /* Opcional, força quebra entre palavras longas */
+  max-width: 100%; /* Limita a largura ao tamanho do contêiner pai */
+  display: inline-block; /* Necessário para aplicar max-width */
+}
+
+/* Responsividade */
+
+/*
+ * Extra Small (XSmall)
+ * Breakpoints.XSmall
+ * Menor que 600px
+ */
+ @media (max-width: 599px) {
+  :host {
+  }
+}
+
+/*
+ * Small
+ * Breakpoints.Small
+ * De 600px até 959px
+ */
+@media (min-width: 600px) and (max-width: 959px) {
+  :host {
+  }
+}
+
+/*
+ * Medium
+ * Breakpoints.Medium
+ * De 960px até 1279px
+ */
+@media (min-width: 960px) and (max-width: 1279px) {
+  :host {
+  }
+}
+
+/*
+ * Large
+ * Breakpoints.Large
+ * De 1280px até 1919px
+ */
+@media (min-width: 1280px) and (max-width: 1919px) {
+  :host {
+  }
+}
+
+/*
+ * Extra Large (XLarge)
+ * Breakpoints.XLarge
+ * A partir de 1920px
+ */
+@media (min-width: 1920px) {
+  :host {
+  }
+}
