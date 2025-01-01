@@ -35,7 +35,7 @@ export class C2L1Component {
 
     ];
     this.produtosMidiaticos = [
-      { title: 'Artes Visuais', link: 'https://projeto-de-artes-visuais.web.app' },
+      { title: 'Produto de Artes Visuais', link: 'https://projeto-de-artes-visuais.web.app' },
     ];
   }
 }
