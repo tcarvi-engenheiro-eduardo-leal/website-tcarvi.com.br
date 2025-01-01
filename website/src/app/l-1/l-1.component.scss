@@ -60,7 +60,7 @@
     "mainArea asideArea";
     grid-template-columns: 9fr 1fr;
     grid-template-rows: auto 1fr auto; /* Linhas ajustáveis */
-    gap: 10px;
+    gap: 20px;
     background-color: green;
   }
 }
@@ -77,7 +77,7 @@
     "mainArea asideArea";
     grid-template-columns: 8fr 2fr;
     grid-template-rows: auto 1fr auto; /* Linhas ajustáveis */
-    gap: 15px;
+    gap: 30px;
     background-color: green;
   }
 }
@@ -94,7 +94,7 @@
     "mainArea asideArea";
     grid-template-columns: 6fr 4fr;
     grid-template-rows: auto 1fr auto; /* Linhas ajustáveis */
-    gap: 20px;
+    gap: 50px;
     background-color: purple;
   }
 }

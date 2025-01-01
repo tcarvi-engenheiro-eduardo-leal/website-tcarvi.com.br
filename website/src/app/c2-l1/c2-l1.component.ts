@@ -1,10 +1,12 @@
 import { Component, ViewEncapsulation } from '@angular/core';
+import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { Site } from '../site';
 
 @Component({
   selector: 't-c2-l1',
   imports: [
+    MatDividerModule,
     MatListModule
   ],
   templateUrl: './c2-l1.component.html',
