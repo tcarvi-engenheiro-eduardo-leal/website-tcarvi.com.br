@@ -9,5 +9,13 @@ export const routes: Routes = [
   {
     path: 'l1',
     component: L1Component
+  },
+  {
+    path: 'l2',
+    component: L1Component
+  },
+  {
+    path: 'l3',
+    component: L1Component
   }
 ];
