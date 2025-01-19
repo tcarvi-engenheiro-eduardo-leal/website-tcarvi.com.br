@@ -2,13 +2,17 @@ import { Component, ViewEncapsulation } from '@angular/core';
 import { MatDividerModule } from '@angular/material/divider';
 import { MatListModule } from '@angular/material/list';
 import { Site } from '../site';
+import { MarkdownModule, MarkdownService } from 'ngx-markdown';
 
 @Component({
   selector: 't-c2-l1',
+  standalone: true,
   imports: [
     MatDividerModule,
-    MatListModule
+    MatListModule,
+    MarkdownModule
   ],
+  providers: [MarkdownService],
   templateUrl: './c2-l1.component.html',
   styleUrl: './c2-l1.component.scss',
   encapsulation: ViewEncapsulation.Emulated

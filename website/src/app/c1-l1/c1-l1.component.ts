@@ -5,6 +5,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 
 @Component({
   selector: 't-c1-l1',
+  standalone: true,
   imports: [
     MatButtonModule,
     MatToolbarModule,

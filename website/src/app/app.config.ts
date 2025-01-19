@@ -4,6 +4,11 @@ import { provideRouter } from '@angular/router';
 import { routes } from './app.routes';
 import { provideAnimationsAsync } from '@angular/platform-browser/animations/async';
 
+import { MarkdownService, SECURITY_CONTEXT } from 'ngx-markdown';
+import { SecurityContext } from '@angular/core';
+
 export const appConfig: ApplicationConfig = {
-  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideAnimationsAsync()]
+  providers: [provideZoneChangeDetection({ eventCoalescing: true }), provideRouter(routes), provideAnimationsAsync(),MarkdownService,
+    { provide: SECURITY_CONTEXT, useValue: SecurityContext.HTML },
+  ]
 };
