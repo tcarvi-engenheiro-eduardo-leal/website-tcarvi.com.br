@@ -1,6 +1,0 @@
-:host {
-  height: 100vh; /* Fallback para navegadores que não suportam dvh */
-  height: 100dvh; /* Usado por navegadores modernos */
-  width: 100vw; /* Fallback para navegadores que não suportam dvw */
-  width: 100dvw; /* Usado em navegadores modernos */
-}
